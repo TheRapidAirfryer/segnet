@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | SEGNET</title>
+    <meta name="description" content="Hablemos de su proyecto. Escríbale a SEGNET por WhatsApp al 9229-4781 o por correo." />
+    <meta name="theme-color" content="#071b2d" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body data-page="contacto">
+    <main>
+      <section class="page-hero">
+        <div class="hero__grid-bg" aria-hidden="true"></div>
+        <div class="container page-hero__inner">
+          <p class="eyebrow">Contacto</p>
+          <h1>Hablemos de su proyecto</h1>
+          <p>Escríbanos directo o llene el formulario y le respondemos con una propuesta.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-page">
+          <div class="contact-cards">
+            <a class="contact-card reveal" href="https://wa.me/50492294781" target="_blank" rel="noopener" data-wa>
+              <span class="contact-card__icon contact-card__icon--wa"><svg class="ico" viewBox="0 0 24 24"><use href="#i-whatsapp" /></svg></span>
+              <small>Llamadas y WhatsApp</small>
+              <strong>+504 9229-4781</strong>
+              <span class="link">Escribir ahora <svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow" /></svg></span>
+            </a>
+            <a class="contact-card reveal" href="mailto:inversionesboran662@gmail.com">
+              <span class="contact-card__icon"><svg class="ico" viewBox="0 0 24 24"><use href="#i-mail" /></svg></span>
+              <small>Correo electrónico</small>
+              <strong>inversionesboran662@gmail.com</strong>
+              <span class="link">Enviar correo <svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow" /></svg></span>
+            </a>
+            <div class="contact-card reveal">
+              <span class="contact-card__icon"><svg class="ico" viewBox="0 0 24 24"><use href="#i-pin" /></svg></span>
+              <small>Cobertura</small>
+              <strong>Honduras</strong>
+              <span class="contact-card__note">Visitamos su espacio para definir el alcance.</span>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap" id="cotizar">
+            <div class="contact-form-wrap__intro reveal">
+              <p class="eyebrow eyebrow--dark">Solicitar cotización</p>
+              <h2>Información para su propuesta</h2>
+              <p>Un alcance claro comienza con las necesidades de su operación. Mientras más nos cuente, más precisa será la propuesta.</p>
+              <ul class="checks">
+                <li><strong>Necesidad:</strong> qué desea conectar, observar o mantener</li>
+                <li><strong>Espacio:</strong> ubicación, áreas y condiciones</li>
+                <li><strong>Alcance:</strong> puntos, equipos y servicios</li>
+                <li><strong>Prioridad:</strong> fechas de referencia</li>
+              </ul>
+            </div>
+
+            <form class="form form--bordered reveal" id="quoteForm" novalidate>
+              <div class="form__row">
+                <label>Nombre<input name="nombre" required autocomplete="name" placeholder="Su nombre" /></label>
+                <label>Empresa<input name="empresa" autocomplete="organization" placeholder="Opcional" /></label>
+              </div>
+              <label>Servicio
+                <select name="servicio" required>
+                  <option value="">Seleccione un servicio</option>
+                  <option>Fibra óptica</option>
+                  <option>Cableado estructurado UTP</option>
+                  <option>Redes Wi-Fi</option>
+                  <option>CCTV y videovigilancia</option>
+                  <option>Control de acceso y biometría</option>
+                  <option>Instalaciones eléctricas</option>
+                  <option>Mantenimiento preventivo o correctivo</option>
+                  <option>Varios servicios</option>
+                </select>
+              </label>
+              <label>Necesidad<textarea name="necesidad" rows="3" required placeholder="Qué desea conectar, observar o mantener"></textarea></label>
+              <div class="form__row">
+                <label>Espacio<input name="espacio" placeholder="Ciudad, áreas del lugar" /></label>
+                <label>Alcance<input name="alcance" placeholder="Ej.: 8 cámaras, 20 puntos de red" /></label>
+              </div>
+              <label>Prioridad
+                <select name="prioridad">
+                  <option>Lo antes posible</option>
+                  <option>Este mes</option>
+                  <option>Estoy planificando</option>
+                </select>
+              </label>
+              <p class="form__error" id="formError" role="alert" hidden>Complete nombre, servicio y necesidad.</p>
+              <div class="form__buttons">
+                <button type="submit" class="btn btn--primary" value="wa">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+                  Enviar por WhatsApp
+                </button>
+                <button type="submit" class="btn btn--outline" value="mail">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail" /></svg>
+                  Enviar por correo
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/layout.js"></script>
+    <script type="module" src="/src/contacto.js"></script>
+  </body>
+</html>
